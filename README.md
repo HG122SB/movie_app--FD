@@ -1,16 +1,62 @@
-# React + Vite
+NEXFLIX – Netflix Clone (React + Vite + Tailwind)
+A beautiful, fully responsive Netflix clone built with React, Vite, Tailwind CSS, Framer Motion & React Toastify. Works 100% offline with dummy data and real movie posters.
+Live Demo → Just run it locally!
+Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2-second animated NEXFLIX splash screen
+Login / Register / Logout (saved in localStorage)
+Stunning hero banner with gradient overlay
+Smooth horizontal scrolling rows (mobile-friendly)
+Click any movie → beautiful modal with details
+Add/Remove from My List (saved forever)
+Toast notifications
+Fully responsive – looks perfect on phone, tablet, desktop
+No API key needed – 20 gorgeous dummy movies included
+Framer Motion animations everywhere
+Tailwind CSS + modern dark UI
 
-Currently, two official plugins are available:
+Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React 18 + Vite
+Tailwind CSS
+Framer Motion
+React Toastify
+localStorage (for auth & watchlist)
 
-## React Compiler
+Quick Start (2 minutes)
+Bash# 1. Clone or download this project
+git clone https://github.com/yourname/nexflix-clone.git
+cd nexflix-clone
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# 2. Install dependencies
+npm install
 
-## Expanding the ESLint configuration
+# 3. Start the app
+npm run dev
+Open http://localhost:5173 → Enjoy your Netflix clone!
+Folder Structure
+textsrc/
+├── App.jsx          ← Everything in ONE beautiful file
+├── main.jsx
+├── index.css        ← Tailwind base
+└── assets/          ← (optional images)
+Want Real Movies? (Optional)
+Replace the dummy data with TMDB API:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Get free API key → https://www.themoviedb.org/settings/api
+In App.jsx, replace:
+
+JavaScriptconst TMDB_API_KEY = "your_real_key_here";
+
+Uncomment the fetch useEffect and remove dummy data
+
+Screenshots
+(You can add real screenshots later)
+Credits
+
+Movie posters from TMDB & Unsplash
+Inspired by Netflix UI
+Built with love by You
+
+License
+MIT – feel free to use for learning, portfolio, or fun!
